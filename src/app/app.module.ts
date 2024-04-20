@@ -5,18 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { CardRoxoComponent } from './card-roxo/card-roxo.component';
+import { CardButtonComponent } from './card-button/card-button.component';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardComponent,
-    CardRoxoComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, CardsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
